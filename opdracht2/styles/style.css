@@ -1,0 +1,392 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text: #FFCC01;
+	--color-background: #385CAA;
+
+	--color-text-h2-p: #000000;
+	--color-background-li: #ffffffa4;
+	--color-background-li-hover: #fffffff3;
+
+	--color-background-ul: #a30a0a;
+	--color-text-ul: #FFFFFF;
+	--color-border-ul: #000000;
+
+	--color-border-button: #FFCC01;
+	--color-background-button: #ffffffd7;
+	--color-text-button: #000000;
+	--color-background-hover: #FFCC01;
+
+	--color-background-popup: #FFFFFF;
+	--color-text-popup: #000000;
+}
+
+
+
+
+
+
+/************/
+/* ALGEMEEN */
+/************/
+body {
+	background-color:var(--color-background);
+}
+  
+h1 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	color: var(--color-text);
+}
+
+
+
+
+
+
+/*******************/
+/* MENU MET BUTTONS*/
+/*******************/
+menu {
+	max-width: 45em;
+	margin: 1em auto 1em auto;
+	padding: 0;
+	  
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/******************/
+/* REFRESH BUTTON */
+/******************/
+.refresh-button {
+	position: relative;
+	padding: 0.7em;
+
+	background-color: var(--color-background-button); 
+    border: 0.2em solid var(--color-border-button);
+
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.7em;
+	color: var(--color-text-button);
+}
+
+.refresh-button:hover {
+	background-color: var(--color-background-hover);
+}
+
+
+/********/
+/* HELP */
+/********/
+.help {
+	position: relative;
+	padding: 0.7em;
+
+	background-color: var(--color-background-button); 
+    border: 0.2em solid var(--color-border-button);
+
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.7em;
+	color: var(--color-text-button);
+}
+
+.help:hover {
+	background-color: var(--color-background-hover);
+}
+
+
+
+
+
+
+
+/*********************/
+/* DARK MODE OPTIE 1 */
+/*********************/
+/*Dit is de eerste darkmode optie. Hier gebruik je de button en dan komt de class .darkmode op de body te staan*/
+.darkmode {
+	--color-background: #061b47;
+
+	--color-text-h2-p: #FFFFFF;
+	--color-background-li: #0000009f;
+	--color-background-li-hover: #000000;
+
+	--color-background-ul: #770808;
+	--color-border-ul: #000000a6;
+}
+
+button.darkmode {
+	position: relative;
+	padding: 0.7em;
+
+	background-color: var(--color-background-button); 
+    border: 0.2em solid var(--color-border-button);
+
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.7em;
+	color: var(--color-text-button);
+}
+
+button.darkmode:hover {
+	background-color: var(--color-background-hover);
+}
+
+
+
+/*********************/
+/* DARK MODE OPTIE 2 */
+/*********************/
+/*Dit is de tweede darkmode optie. Hier kijkt de code naar de instelling van de computer en past het aan als je darkmode
+hebt ingesteld*/
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #061b47;
+
+	    --color-text-h2-p: #FFFFFF;
+	    --color-background-li: #0000009f;
+	    --color-background-li-hover: #000000;
+
+	    --color-background-ul: #770808;
+	    --color-border-ul: #000000a6;
+	}
+}
+
+
+
+
+
+
+
+/**********/
+/* LOADER */
+/**********/
+div.loader {
+	position: fixed;
+	left: 50%;
+	top: 60%;
+	
+	display: none;
+
+	animation: pokeball 0.7s infinite linear;
+}
+
+div.loader.loading {
+	display: block;
+}
+
+/*Hierdoor draait de pokeball*/
+@keyframes pokeball {
+	0% {
+		transform: translate(-50%, -50%) rotate(0turn);
+	}
+	100% { 
+		transform: translate(-50%, -50%) rotate(1turn); 
+	}
+}
+
+div.loader img {
+	width: 5em;
+	display: block;
+}
+
+
+
+
+
+
+/*****************/
+/* EIGEN POKEDEX */
+/*****************/
+ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 9em);
+
+	/*Heeft Sanne mee geholpen, ik kende min-height helemaal niet*/
+	min-height: 11em;
+	max-width: 45em;
+	margin: auto;
+	padding: 0.4em;
+	gap: 1em;
+	
+	justify-content: center;
+	background-color: var(--color-background-ul);
+	list-style: none;
+	border: solid 0.5em var(--color-border-ul);
+}
+
+/*Dit is de empty state. Als er nog niks in de ul zit, zie je de tekst. Zodra je iets erin sleept, gaat 
+de tekst weg*/
+ul:empty::after {
+	content:"Your Pokédex is still empty. Drag your favorite Pokémons to your Pokédex!!";
+
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -80%);
+	max-width: 16em;
+
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.7em;
+	color: var(--color-text-ul);
+	text-align: center;
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+/************/
+/* POKEMONS */
+/************/
+section:nth-of-type(2) {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+	margin-top: 1.5em;
+}
+
+ol {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 9em);
+
+	margin: 0;
+	padding: 0.8em;
+	gap: 1em;
+
+	list-style: none;
+	justify-content: center;
+	text-align: center;
+}
+
+li {
+	aspect-ratio: 1/1;
+	
+	display: grid;
+	place-content: center;
+	place-items: center;
+	flex-shrink:0;
+	
+	background-color: var(--color-background-li);
+	border-radius: 10%;
+
+	cursor:grab;
+}
+
+li.sortable-ghost {
+	cursor:grabbing;
+}
+
+li:hover {
+	background-color: var(--color-background-li-hover);
+}
+
+li img {
+	height: 5em;
+}
+
+h2 {
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+	font-size: 0.55em;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: 700;
+	color: var(--color-text-h2-p);
+}
+
+p {
+	font-size: 0.4em;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: 600;
+	color: var(--color-text-h2-p);
+	margin-top: 0.3em;
+	margin-bottom: 0.1em;
+}
+
+
+
+
+
+
+
+/**************/
+/* HELP POPUP */
+/**************/
+/*Bron: Easy Tutorials op Youtube https://youtu.be/AF6vGYIyV8M */
+
+/*De popup is er eigenlijk altijd, maar hij staat helemaal bovenaan, is heel klein en visibility=hidden. Door middel
+van Javescript komt ie tevoorschijn*/
+.popup {
+	background: var(--color-background-popup);
+	border-radius: 10%;
+	border: 0.2em solid #000000;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+	max-width: 21em;
+	text-align: center;
+	padding: 0 30px 30px;
+	color: #333;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+
+/*Door Javascript komt de class .open-popup erop en wordt ie zichtbaar, groter en komt ie midden het beeld te staan*/
+.open-popup {
+	visibility: visible;
+	top: 45%;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+/*Hierdoor verdwijnt ie weer. Hij wordt heel klein en verdwijnt daardoor*/
+.close-popup {
+	transform: translate(-50%, -50%) scale(0);
+}
+
+.popup h2{
+	font-size: 1.5em;
+	margin: 0.7em 0 0.7em;
+	color: #FFCC01;
+	line-height: 1.3em;
+}
+
+.popup p {
+	font-size: 0.7em;
+	font-weight: 400;
+	color: var(--color-text-popup);
+	line-height: 1.3em;
+}
+
+.popup button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.7em;
+	width: 100%;
+	margin-top: 1.5em;
+	padding: 0.9em 0;
+	border: 0.2em solid var(--color-border-button);
+}
+
+.popup button:hover {
+	background-color: var(--color-background-hover);
+}

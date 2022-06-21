@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	
+<head> 
+	<meta charset="UTF-8">
+	<meta name="author" content="Ruby">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!--De pixel font komt van Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Turret+Road:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Pokédex!</h1>
+	</header>
+
+	<main>
+		<!--Deze lege ul is de pokédex. De rode balk. Hier sleep je de pokémons naartoe-->
+		<ul></ul>
+
+		<!--Dit zijn alle buttons. De refresh, help en darkmode button-->
+		<menu>
+			<button class="refresh-button">
+				Refresh
+			</button>
+
+			<button class="help" onclick="openPopup()">
+				?
+			</button>
+
+			<button class="darkmode">
+				Dark/light mode
+			</button>
+		</menu>
+
+		<!--Bron: Easy Tutorials op Youtube https://youtu.be/AF6vGYIyV8M -->
+		<div class="popup" id="popup">
+			<h2>Make your own Pokémon team!!</h2>
+			<p>To be a good Pokémon trainer, you need to have a team of the best Pokémons of the Pokémon 
+				universe. Drag your favorite Pokémon to your own Pokédex and win all the battles.
+			</p>
+			<button type="button" onclick="closePopup()">Gotta catch em all!!</button>
+		</div>
+
+		<!--Een lege ol voor de API. Hier komen de pokémons in te staat door middel van Javascript-->
+		<section>
+			<ol id="pokedex"></ol>
+		</section>
+
+		<!--De loader. Zelf in Illustrator gemaakt-->
+		<div class="loader">
+			<img src="../opdracht2/images/Pokeball.png" alt="">
+		</div>
+	</main>
+	
+	<!--Dit is script voor de drag and drop-->
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+	<!--Mijn eigen script-->
+	<script src="scripts/script.js"></script>
+</body>
+	
+</html>
