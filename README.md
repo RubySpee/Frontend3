@@ -127,6 +127,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit was lastig/Is niet gelukt:
-  
+  In het begin dacht ik echt van 'Okeyy hoe ga ik dit doen?!' en wist ik niet echt wat ik wilde maken. Ik ben nou niet echt heel goed in coderen. Ik kan wel iets mooi maken met css en basic site maken, maar erg complexe dingen kon ik nog niet. Dat wilde ik ook wel leren tijdens deze opdracht. Ik probeerde juist een beetje 'moeilijkere' dingen te zoeken om toe te voegen. Uiteindelijk is alles wel gelukt wat ik wilde maken en meeste is wel wat complexer dan dingen die ik tijdens vorige vakken heb gebruikt. Ik heb een API gebruikt, drag en drop, darkmode en animaties. Allemaal nieuw voor mij. Ik had misschien nog iets van filteren of sorteren willen toevoegen, maar ik kon daar niet echt een goed voorbeeld voor vinden op internet. 
   
 </details>
