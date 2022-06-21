@@ -27,7 +27,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/Schets2" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/Schets3" width="375px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
@@ -46,7 +47,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Eindresultaat" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -66,7 +67,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/Schets4" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/Schets5" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
@@ -117,17 +119,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/Eindresultaat2" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Ik vond dit echt een hele leuke opdracht. In het begin dacht ik wel van 'Oo dit gaat lastig worden', maar toen ik eenmaal bezig was vond ik het echt leuk. Heb eigenlijk best veel geleerd tijdens opdracht 2. Wat een API was wist ik niet en hoe je dat kon gebruiken, hoe je drag en drop kon toepassen, paar styling elementen die ik nog niet kende (o.a. max-width en min-height) en dat het werken met custom properties eigenlijk best wel goed werkt. Dat ik de Pokémon API werkend heb gekregen, is wel echt gaaf. Heb daarvoor een YouTube video gekeken en die man legde het zo goed uit, dat was echt heel fijn. Ik zou niet weten hoe ik het zelf moet doen, zo'n API schrijven, maar met behulp van internet lukt het me wel. 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  
+  
 </details>
