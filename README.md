@@ -14,9 +14,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+  2. https://projects.verou.me/bubbly/
+  3. https://dev.to/nazanin_ashrafi/let-s-create-a-simple-smiley-face-with-css-28e6
+  4. Easy Tutorials op Youtube https://youtu.be/AF6vGYIyV8M
+  5. James Q Quick op Youtube https://youtu.be/T-VQUKeSU1w
 
 
 
@@ -84,31 +86,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na testen (week 7)</summary>
 
-  Neem minimaal 5 bevindingen op:
+  Mijn bevindingen van het testen:
   - Ik kon nog wel even kijken naar iets van een pop-up of opslaan optie
   - Ik had alleen een button voor darkmode. Ik kon nog wel ervoor zorgen dat dat ook met je instellingen kon
-  - 
+  - Ik heb nog geen filter/sorteer/zoek optie
 
 
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik heb alleen nog maar dat je de pokémons gaan slepen naar de 'pokédex' en thats it. Misschien iets van opslaan of optie dat je je email kan invullen en dat ie dan daar heen wordt verstuurd. Had ik zelf ook al aan gedacht, maar had nog niet echt iets leuks gevonden of iets dat ik snapte. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik denk dat de makkelijskte optie is om een popup te maken met dat je je email kan invullen en dat ie dan daar naar toe wordt verstuurd. Ik zou niet weten hoe je het zo kan maken dat je het ook echt kan opslaan op de website zelf. 
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik heb voor de darkmode een button en als je daarop klikt wordt de pagina donker. Roosmarijn zei dat ik misschien nog kon kijken naar of ik dat ook kan doen met als je je instellingen zo insteld (dat je darkmode wilt). 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
+  Ik heb dat opgelost door ook @media te gebruiken. Dus nu heb ik als je op de knop drukt en het werkt ook als je je computer op darkmode zet. 
+  
+  
+  
   ### Bevinding 3:
-  ...
+  In de opdracht stond dat we ook filteren, sorteren of zoeken moesten gebruiken, maar ik had niks gevonden wat ik kon gebruiken op mijn pagina of iets wat ik snapte. Dus was me niet gelukt of dat toe te voegen. Ik zou het wel willen toevoegen, filteren of sorteren. Ik heb redelijk was onderdelen waar je op kan filteren (naam, nummer of type). 
+
+  #### oplossing:
+  Ik weet hier niet echt een oplossing voor. Denk gewoon verder Googlen of hulp vragen. 
+
 </details>
 
 
